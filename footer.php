@@ -8,5 +8,7 @@
             </nav>
             <p>Rest © 2015. Alguns direitos reservados.</p>
         </footer>
+
+        <?php wp_footer(); ?>
     </body>
 </html>
