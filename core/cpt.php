@@ -57,7 +57,7 @@ function create_post_type_pratos()
 			'has_archive' => false,
 			'hierarchical' => true,
 			'menu_position' => null,
-			'menu_icon' => 'dashicons-chart-line', // to get new icons access: https://developer.wordpress.org/resource/dashicons/#calendar
+			'menu_icon' => 'dashicons-food', // to get new icons access: https://developer.wordpress.org/resource/dashicons/#calendar
 			'supports' => array('title'),
 
 		)
