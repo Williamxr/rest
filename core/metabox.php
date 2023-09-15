@@ -23,14 +23,14 @@ add_filter('rwmb_meta_boxes', 'rest_register_meta_boxes');
 
 function rest_register_meta_boxes($meta_boxes){
 
-    $prefix = 'pratos-';
+    $prefix = 'cardapio-';
 
-    // metabox pratos
+    // metabox cardapio
 
     $meta_boxes[] = [
-        'id' => 'pratos_mb',
-        'title' => 'Insira aqui os pratos',
-        'post_types' => array('pratos'),
+        'id' => 'cardapio_mb',
+        'title' => 'Insira aqui os cardapio',
+        'post_types' => array('cardapio'),
         'context' => 'normal',
         'priority' => 'high',
         'fields' => [

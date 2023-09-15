@@ -29,23 +29,23 @@
 	return $labels;
 }
 
-add_action('init', 'create_post_type_pratos');
+add_action('init', 'create_post_type_cardapio');
 
-function create_post_type_pratos()
+function create_post_type_cardapio()
 {
 	/**
 	 * Labels customizados para o tipo de post
 	 * 
 	 */
-	$namePlural = 'Pratos';
-	$nameSingular = 'Pratos';
+	$namePlural = 'Cardapio';
+	$nameSingular = 'Cardapio';
 
 	/**
 	 * Registamos o tipo de post projetos através desta função
 	 * passando-lhe os labels e parâmetros de controle.
 	 */
 	register_post_type(
-		'pratos',
+		'cardapio',
 		array(
 			'labels' =>  createLabels($nameSingular, $namePlural, true),
 			'exclude_from_search' => true,
