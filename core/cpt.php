@@ -29,7 +29,7 @@
 	return $labels;
 }
 
-add_action( 'init', 'create_post_type_pratos' );
+add_action('init', 'create_post_type_pratos');
 
 function create_post_type_pratos()
 {
@@ -37,7 +37,7 @@ function create_post_type_pratos()
 	 * Labels customizados para o tipo de post
 	 * 
 	 */
-	$namePlural = 'Prato';
+	$namePlural = 'Pratos';
 	$nameSingular = 'Pratos';
 
 	/**

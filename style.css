@@ -791,3 +791,25 @@ footer {
 }
 
 }
+
+/* Estilizando o link da imagem */
+.image-link {
+    display: block; /* Certifica-se de que o link ocupe todo o espaço disponível */
+    text-align: center; /* Centraliza o link horizontalmente */
+    position: relative; /* Permite posicionar o botão abaixo */
+}
+
+/* Estilizando o botão de download */
+.download-button {
+    display: block; /* Garante que o botão seja exibido em uma nova linha */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: white; /* Cor do texto do botão */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    text-decoration: none; /* Remove a decoração de link (sublinhado) */
+    margin-top: 10px; /* Espaçamento superior para separar da imagem */
+    width: 150px;
+    margin-left: auto; /* Centraliza o botão horizontalmente */
+    margin-right: auto; /* Centraliza o botão horizontalmente */
+}
