@@ -6,8 +6,8 @@ add_action( 'init', 'create_custom_taxonomy_cardapio', 0 );
 function create_custom_taxonomy_cardapio() {
  
     $labels = array(
-      'name' => _x( 'Cardapio', 'taxonomy general name' ),
-      'singular_name' => _x( 'Cardapio', 'taxonomy singular name' ),
+      'name' => _x( 'Pratos', 'taxonomy general name' ),
+      'singular_name' => _x( 'Pratos', 'taxonomy singular name' ),
       'search_items' =>  __( 'Procurar Categoria' ),
       'all_items' => __( 'Todas Categorias' ),
       'parent_item' => __( 'Item pai da Categoria' ),
@@ -16,7 +16,7 @@ function create_custom_taxonomy_cardapio() {
       'update_item' => __( 'Atualizar Categoria' ),
       'add_new_item' => __( 'Adicionar nova Categoria' ),
       'new_item_name' => __( 'Novo nome para Categoria' ),
-      'menu_name' => __( 'Cardapio' ),
+      'menu_name' => __( 'Pratos' ),
     ); 	
    
     register_taxonomy('pratos',array('cardapio'), array(

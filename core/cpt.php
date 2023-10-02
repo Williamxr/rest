@@ -54,7 +54,11 @@ function create_post_type_cardapio()
 			'show_ui' => true,
 			'show_in_menu' => true,
 			'capability_type' => 'post',
-			'has_archive' => false,
+			'has_archive' => 'cardapio',
+			'rewrite' => array(
+				'slug' => 'cardapio',
+				'with_front' => false,
+			),
 			'hierarchical' => true,
 			'menu_position' => null,
 			'menu_icon' => 'dashicons-food', // to get new icons access: https://developer.wordpress.org/resource/dashicons/#calendar

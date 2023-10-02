@@ -41,7 +41,7 @@ function rest_register_meta_boxes($meta_boxes){
             ],
             [
                 'name' => 'Descrição',
-                'id' => $prefix . 'descrição',
+                'id' => $prefix . 'descricao',
                 'type' => 'text',
             ],
             [

@@ -1,21 +1,21 @@
-<?php get_header(); ?>
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php 
+  if (!defined('ABSPATH')) exit;
+  get_header(); 
+?>
 
-		<section class="container sobre">
-			<h2 class="subtitulo"><?php the_title(); ?></h2>
+<div id="main">
+    <?php
+    if ( have_posts() ) {
+        while ( have_posts() ) {
+            the_post();
+            get_template_part( 'content', get_post_format() );
+        }
+        posts_nav_link('separator','prelabel','nextlabel');
+    } else {
+        echo '<h2>Nenhum post encontrado.</h2>';
+    }
+    ?>
+</div>
 
-			<div class="grid-8">
-				<?php the_content(); ?>
-			</div>
-		</section>
-
-	<?php endwhile; else: ?>
-		<section class="container sobre">
-			<div class="grid-8">
-				<p>Essa página não exite</p>
-			</div>
-		</section>
-	<?php endif; ?>
-
-
-<?php get_footer(); ?>
+<?php
+get_footer();
